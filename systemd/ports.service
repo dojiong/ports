@@ -1,0 +1,10 @@
+[Unit]
+Description=ports daemon
+
+[Service]
+Type=forking
+PIDFile=/var/run/ports.pid
+ExecStart=/usr/bin/ports
+
+[Install]
+WantedBy=multi-user.target
